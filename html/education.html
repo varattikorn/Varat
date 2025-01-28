@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Varattikorn</title>
+    <link rel="stylesheet" href="/css/style.css">
+    <link rel="stylesheet" href="/css/educat.css">
+    <style>
+    </style>
+</head>
+
+<body>
+    <nav>
+        <div class="logo">
+            <a href="/index.html"><img alt="logo" src="/img/585699.png" width="20px"></a>
+        </div>
+        <ul>
+            <li class="hideOnMoblie"><a href="/index.html">Home</a></li>
+            <li class="hideOnMoblie"><a href="/html/personalinformation.html">Personal Information</a></li>
+            <li class="hideOnMoblie"><a href="/html/education.html">Education</a></li>
+            <li class="hideOnMoblie"><a href="/html/skills.html">Skills</a></li>
+            <li class="hideOnMoblie"><a href="/html/workexperience.html">Work Experience</a></li>
+            <li class="hideOnMoblie"><a href="/html/activities.html">Activities</a></li>
+            <li class="hideOnMoblie"><a href="/html/portfolioofwork.html">Portfolio of Work</a></li>
+        </ul>
+
+        <div class="menu-button">
+        <div class="container" onclick="showSidebar()">
+            <div class="bar1"></div>
+            <div class="bar2"></div>
+            <div class="bar3"></div>
+            </div>
+        </div>
+
+        <ul class="sidebar">
+            <li onclick="hideSidebar()">  
+                <div class="container">
+                <div class="bar4"></div>
+                <div class="bar5"></div>
+                <div class="bar6"></div>
+                </div></li>
+            <li><a href="/index.html">Home</a></li>    
+            <li><a href="/html/personalinformation.html">Personal Information</a></li>
+            <li><a href="/html/education.html">Education</a></li>
+            <li><a href="/html/skills.html">Skills</a></li>
+            <li><a href="/html/workexperience.html">Work Experience</a></li>
+            <li><a href="/html/activities.html">Activities</a></li>
+            <li><a href="/html/portfolioofwork.html">Portfolio of Work</a></li>
+        </ul>
+    </nav>
+
+    <script>
+        function showSidebar() {
+            const sidebar = document.querySelector('.sidebar')
+            sidebar.style.display = 'flex'
+        }
+        function hideSidebar() {
+                        const sidebar = document.querySelector('.sidebar')
+            sidebar.style.display = 'none'
+        }
+    </script>
+    <!-------------------------------------------------------------------------------------->
+    <section class="container-boxper">
+        <div class="text-headper">Education</div>
+    </section>
+
+    <main class="main-text">
+        <p>Seccondary School</p>
+        <div>Prachinratsadornamroong
+            <div>2015-2021</div>
+            <p>Majoring in Science and Mathematics</p>
+        </div>
+    </main>
+    <main class="main-text">
+        <p>Bachelor's degree</p>
+        <div>Thammasat University<br>Rangsit Center
+            <div>2020-present</div>
+            <p>Bachelor's degree of Science<br>Majoring in Electronocs Physics<br>Minoring in Computer Science</p>
+        </div>
+    </main>
+    
+    <!-------------------------------------------------------------------------------------->    
+    <footer  class="container-footer">
+        <p>Web Design and <br>Development by Varatikorn</p>
+        <a href="#"><img alt="logo" src="/img/585699.png">Project Braimstorm</a>
+    </footer>
+</body>
+</html>

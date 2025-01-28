@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Varattikorn</title>
+    <link rel="stylesheet" href="/css/style.css">
+    <link rel="stylesheet" href="/css/skill.css">
+    <style>
+    </style>
+</head>
+
+<body>
+    <nav>
+        <div class="logo">
+            <a href="/index.html"><img alt="logo" src="/img/585699.png" width="20px"></a>
+        </div>
+        <ul>
+            <li class="hideOnMoblie"><a href="/index.html">Home</a></li>
+            <li class="hideOnMoblie"><a href="/html/personalinformation.html">Personal Information</a></li>
+            <li class="hideOnMoblie"><a href="/html/education.html">Education</a></li>
+            <li class="hideOnMoblie"><a href="/html/skills.html">Skills</a></li>
+            <li class="hideOnMoblie"><a href="/html/workexperience.html">Work Experience</a></li>
+            <li class="hideOnMoblie"><a href="/html/activities.html">Activities</a></li>
+            <li class="hideOnMoblie"><a href="/html/portfolioofwork.html">Portfolio of Work</a></li>
+        </ul>
+
+        <div class="menu-button">
+        <div class="container" onclick="showSidebar()">
+            <div class="bar1"></div>
+            <div class="bar2"></div>
+            <div class="bar3"></div>
+            </div>
+        </div>
+
+        <ul class="sidebar">
+            <li onclick="hideSidebar()">  
+                <div class="container">
+                <div class="bar4"></div>
+                <div class="bar5"></div>
+                <div class="bar6"></div>
+                </div></li>
+            <li><a href="/index.html">Home</a></li>    
+            <li><a href="/html/personalinformation.html">Personal Information</a></li>
+            <li><a href="/html/education.html">Education</a></li>
+            <li><a href="/html/skills.html">Skills</a></li>
+            <li><a href="/html/workexperience.html">Work Experience</a></li>
+            <li><a href="/html/activities.html">Activities</a></li>
+            <li><a href="/html/portfolioofwork.html">Portfolio of Work</a></li>
+        </ul>
+    </nav>
+
+    <script>
+        function showSidebar() {
+            const sidebar = document.querySelector('.sidebar')
+            sidebar.style.display = 'flex'
+        }
+        function hideSidebar() {
+                        const sidebar = document.querySelector('.sidebar')
+            sidebar.style.display = 'none'
+        }
+    </script>
+ 
+     <!-------------------------------------------------------------------------------------->
+     <section class="container-boxper">
+        <div class="text-headper">Skills</div>
+    </section>
+
+    <main class="main-text">
+        <p>Technical Skills</p>
+        <div>Code Programming
+            <div>Beginer</div>
+            <p>HTML & CSS</p>
+        </div>
+        <div >Docummentation
+            <div>Intermediate</div>
+            <p>Microsoft Office 365<br>Google Workspace</p>
+        </div>
+        <div>Design Programming
+            <div>Intermediate</div>
+            <p>Adobe Illustrator<br>Adobe Photoshop<br>Canva<br>Figma</p>
+        </div>
+        <div>3D Degign & <br>Graphical Programming
+            <div>Intermediate</div>
+            <p>Solidwork<br>NI LabVIEW</p>
+        </div>
+    </main>
+
+    <main class="main-text2">
+        <p>Soft Skills</p>
+        <div>3AE
+            <p>Ambition<br>Analysis and Management<br>Ability to resolve specific incidents</p>
+        </div>
+    </main>
+
+
+    <!-------------------------------------------------------------------------------------->
+    <footer  class="container-footer">
+        <p>Web Design and <br>Development by Varatikorn</p>
+        <a href="#"><img alt="logo" src="/img/585699.png">Project Braimstorm</a>
+    </footer>
+</body>
+</html>
